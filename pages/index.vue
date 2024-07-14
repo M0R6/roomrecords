@@ -2,7 +2,7 @@
   <div class="josef">
     <div id="disini" class="w-screen h-[56px] border-0 p-1 m-0 bg-black" :class="{ 'hidden': hidden }">
       <div @click="hideIt" class="cursor-pointer">
-        <font-awesome-icon class="h-5 ml-[10px] mt-[10px]" style="color: white;" icon="xmark" />
+        <font-awesome-icon class="h-6 ml-[10px] mt-[10px]" style="color: white;" icon="xmark" />
         <a href="https://youtube.com/shorts/nFJkAdgML_A?si=YezYkxf9u_JAnK2X/" target="_blank">
           <div class="mt-[-33px] text-center p-[12px] text-2xl">
             <h1 class="text-white">

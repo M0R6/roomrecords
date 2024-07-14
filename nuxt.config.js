@@ -19,7 +19,12 @@ export default {
     ]
   },
 
-  // target: server,
+  target: 'static',
+  target: 'static',
+  router: {
+    base: '/morganroomrecords/'
+  },
+  ssr: false,
 
 
   // Global CSS: https://go.nuxtjs.dev/config-css
