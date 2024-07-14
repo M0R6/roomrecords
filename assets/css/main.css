@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.josef {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.josef2 {
+  font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  /* font-size: 45px; */
+}
+
+.cormorant-garamond-light {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 300;
+   font-style: normal;
+ }
+ 
+ .cormorant-garamond-regular {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ .cormorant-garamond-medium {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 500;
+   font-style: normal;
+ }
+ 
+ .cormorant-garamond-semibold {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 600;
+   font-style: normal;
+ }
+ 
+ .cormorant-garamond-bold {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 700;
+   font-style: normal;
+ }
+ 
+ .cormorant-garamond-light-italic {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 300;
+   font-style: italic;
+ }
+ 
+ .cormorant-garamond-regular-italic {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 400;
+   font-style: italic;
+ }
+ 
+ .cormorant-garamond-medium-italic {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 500;
+   font-style: italic;
+ }
+ 
+ .cormorant-garamond-semibold-italic {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 600;
+   font-style: italic;
+ }
+ 
+ .cormorant-garamond-bold-italic {
+   font-family: "Cormorant Garamond", serif;
+   font-weight: 700;
+   font-style: italic;
+ }
+ 
+
+
+/* .borderrad {
+   border-end-end-radius: 9999px;
+} */
+
+.borderrad2{
+   border-top-left-radius: 0.5rem /* 8px */;
+   border-bottom-left-radius: 0.5rem /* 8px */;
+}
+
+.qs{
+   font-family: "Quicksand", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+ }
