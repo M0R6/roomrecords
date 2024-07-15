@@ -15,7 +15,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/jpeg', href: '~/mrr.jpg' }
+      { rel: 'icon', type: 'image/jpeg', href: 'static/mrr.jpg' }
     ]
   },
 
