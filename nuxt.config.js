@@ -31,9 +31,7 @@ export default {
   css: ['~/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/fontawesome.js'
-  ],
+  plugins: [{ src: '~/plugins/fontawesome.js', mode: 'client' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
