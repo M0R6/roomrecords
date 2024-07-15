@@ -3,19 +3,19 @@
     <div class="content has-text-centered">
       <div class="social-icons">
         <a href="https://instagram.com/nrfntr" target="_blank">
-          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white"  :icon="['fab', 'instagram']" />
+          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300"  :icon="['fab', 'instagram']" />
         </a>
         <a href="https://x.com/nrfntr" target="_blank">
-          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white" :icon="['fab', 'x-twitter']" />
+          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'x-twitter']" />
         </a>
         <a href="https://youtube.com/@M0R6" target="_blank">
-          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white" :icon="['fab', 'youtube']" />
+          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'youtube']" />
         </a>
         <a href="https://twitch.tv/nrfntr" target="_blank">
-          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white" :icon="['fab', 'twitch']" />
+          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'twitch']" />
         </a>
         <a href="https://discord.com/users/944014822603907102" target="_blank">
-          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white" :icon="['fab', 'discord']" />
+          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'discord']" />
         </a>
       </div>
       <p>
