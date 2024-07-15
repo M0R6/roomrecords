@@ -2,9 +2,11 @@
   <div class="josef">
     <div id="disini" class="w-screen h-[56px] border-0 p-1 m-0 bg-black" :class="{ 'hidden': hidden }">
       <div @click="hideIt" class="cursor-pointer">
-        <font-awesome-icon class="h-6 ml-[10px] mt-[10px]" style="color: white;" icon="xmark" />
+        <div class="inline-block p-2">
+          <font-awesome-icon class="h-6 ml-1 mt-1 cursor-pointer text-white" icon="xmark" />
+        </div>
         <a href="https://youtube.com/shorts/nFJkAdgML_A?si=YezYkxf9u_JAnK2X/" target="_blank">
-          <div class="mt-[-33px] text-center p-[12px] text-2xl">
+          <div class="mt-[-56px] text-center p-[12px] text-2xl">
             <h1 class="text-white">
               <span>Stream</span>
               <span class="text-blue-300">MORG's "Good Day"</span>
