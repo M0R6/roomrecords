@@ -19,8 +19,8 @@
         </a>
       </div>
       <p>
-        &copy; 2024 <a href="https://linktr.ee/nrfntr/" target="_blank">MORG</a><br>
-        Background picture by <a href="https://unsplash.com/@introspectivedsgn" target="_blank">Eric Mclean</a>
+        &copy; 2024 <a class="hover:text-blue-300" href="https://morgann.me/" target="_blank">MORG</a><br>
+        Background picture by <a class="hover:text-blue-300" href="https://unsplash.com/@introspectiveds" target="_blank">Eric Mclean</a>
       </p>
     </div>
   </footer>
@@ -34,7 +34,7 @@ export default {
 
 <style scoped>
 .footer {
-  background-color: black;
+  background-color: #212121;
   color: #fff;
   padding: 1rem 0;
   width: 100%;
