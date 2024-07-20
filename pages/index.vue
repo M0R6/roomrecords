@@ -59,6 +59,7 @@ export default {
     return {
       hidden: false,
       videos: [
+        { id: "4Sqw-GwACNI" },
         { id: "mopGmJsVWv4" },
         { id: "E2OZb9yknjU" },
         { id: "b3KM9OthMoA" },
