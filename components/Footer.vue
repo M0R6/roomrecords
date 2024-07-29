@@ -11,6 +11,12 @@
         <a href="https://youtube.com/@M0R6" target="_blank">
           <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'youtube']" />
         </a>
+        <a href="https://open.spotify.com/user/31axkskdizshwu2w55xjsnu5shzy?si=9ceec54e6dc34e41" target="_blank">
+          <font-awesome-icon class=" h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'spotify']" />
+        </a>
+        <a href="https://soundcloud.com/nrfntr" target="_blank">
+          <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300"  :icon="['fab', 'soundcloud']" />
+        </a>
         <a href="https://twitch.tv/nrfntr" target="_blank">
           <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'twitch']" />
         </a>

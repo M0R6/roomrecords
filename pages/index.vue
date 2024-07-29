@@ -19,16 +19,17 @@
     <div class="bg-container mx-auto w-screen h-screen border-0 p-0 m-0" :style="backgroundStyle">
       <div class="flex-auto text-center text-4xl">
         <a href="">
-          <h1 class="pt-[15px] text-white josef2">
+          <!-- <h1 class="pt-[15px] text-white josef2">
             <span>Morgan</span> <br />
             <span>Room</span> <br />
             <span>Records</span>
-          </h1>
+          </h1> -->
+          <v-img class="mx-auto mt-3 d-flex justify-center" height="300" width="300" :src="require('~/assets/images/mrr.svg')"></v-img>
         </a>
       </div>
       <div>
-        <h1 class="pt-20 text-center text-3xl text-white josef2">MORG's Music</h1>
-        <YouTubeVideos :videos="videos" />
+        <h1 class="pt-10 text-center text-3xl text-white josef2">MORG's Music</h1>
+        <YouTubeVideos videos="videos" />
       </div>
     </div>
     <footer>
@@ -60,7 +61,6 @@ export default {
       hidden: false,
       videos: [
         { id: "4Sqw-GwACNI" },
-        { id: "mopGmJsVWv4" },
         { id: "E2OZb9yknjU" },
         { id: "b3KM9OthMoA" },
         { id: "-W01JTUmr9s" },
