@@ -29,7 +29,7 @@
       </div>
       <div>
         <h1 class="pt-10 text-center text-3xl text-white josef2">MORG's Music</h1>
-        <YouTubeVideos videos="videos" />
+        <YouTubeVideos :videos="videos" />
       </div>
     </div>
     <footer>
