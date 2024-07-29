@@ -27,9 +27,19 @@
           <v-img class="mx-auto mt-3 d-flex justify-center" height="300" width="300" :src="require('~/assets/images/mrr.svg')"></v-img>
         </a>
       </div>
+      <div class="mx-auto justify-center flex">
+        <!-- <iframe width="560" height="202" src="https://www.bandlab.com/embed/?id=77dde34a-1640-ef11-86c3-000d3a42581b" allowfullscreen></iframe> -->
+      </div>
       <div>
         <h1 class="pt-10 text-center text-3xl text-white josef2">MORG's Music</h1>
-        <YouTubeVideos :videos="videos" />
+      </div>
+      <div>
+        <h1 class="pt-10 text-center text-3xl text-white josef2">YouTube Videos</h1>
+        <YouTubeVideos :videos="videos"/>
+      </div>
+      <div>
+        <h1 class="pt-10 text-center text-3xl text-white josef2">Tracks on BandLab</h1>
+        <BandLabEmbed :tracks="tracks" />
       </div>
     </div>
     <footer>
@@ -49,16 +59,20 @@
 
 <script>
 import YouTubeVideos from "@/components/YouTubeVideos.vue";
+import BandLabEmbed from "@/components/BandLabEmbed.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   components: {
     YouTubeVideos,
+    BandLabEmbed,
     Footer,
   },
   data() {
     return {
       hidden: false,
+      isModalVisible: false,
+      selectedVideoUrl: '',
       videos: [
         { id: "4Sqw-GwACNI" },
         { id: "E2OZb9yknjU" },
@@ -69,6 +83,10 @@ export default {
         { id: "80DxoS3t9vg" },
         { id: "KluIuQGYeM0" },
         { id: "pcrVyJj6CYk" },
+      ],
+      tracks: [
+        { id: "77dde34a-1640-ef11-86c3-000d3a42581b" },
+        // Add more BandLab track IDs as needed
       ],
     };
   },
@@ -86,7 +104,7 @@ export default {
   methods: {
     hideIt() {
       this.hidden = !this.hidden;
-    },
+    },    
   },
   mounted() {
     // Force reactivity to ensure background image is applied

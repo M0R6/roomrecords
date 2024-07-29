@@ -19,7 +19,10 @@
    methods: {
      getVideoUrl(videoId) {
        return `https://www.youtube.com/embed/${videoId}`;
-     }
+     },
+     handleVideoClick(videoId) {
+      this.$emit('video-clicked', videoId);
+    }
    }
  }
  </script>
@@ -39,6 +42,7 @@
   width: 100%;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   position: relative;
+  cursor: pointer; /* Add cursor pointer to indicate clickable items */
 }
 
 .video iframe {
