@@ -74,6 +74,8 @@ export default {
       isModalVisible: false,
       selectedVideoUrl: '',
       videos: [
+        { id: "-Zm_VqCsCCY" },
+        { id: "15xQoUNMWVc" },
         { id: "4Sqw-GwACNI" },
         { id: "E2OZb9yknjU" },
         { id: "b3KM9OthMoA" },
