@@ -16,6 +16,30 @@
         </a>
       </div>
     </div>
+    <nav class="w-full bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-5 px-4 shadow-lg">
+      <div class="container mx-auto flex justify-center items-center">
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-12 text-center">
+        <li>
+        <a href="#spotify" class="relative font-medium text-lg hover:text-green-400 transition-colors duration-300 group">
+          Spotify
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-green-400 group-hover:w-full transition-all duration-300"></span>
+        </a>
+        </li>
+        <li>
+        <a href="#youtube" class="relative font-medium text-lg hover:text-red-400 transition-colors duration-300 group">
+          YouTube
+          <span class="absolute left-0 bottom-0 w-0.5 bg-red-400 group-hover:w-full transition-all duration-300"></span>
+        </a>
+        </li>
+        <li>
+        <a href="#contact" class="relative font-medium text-lg hover:text-purple-400 transition-colors duration-300 group">
+          Contacts
+          <span class="absolute left-0 bottom-0 w-0 h-0.5 bg-purple-400 group-hover:w-full transition-all duration-300"></span>
+        </a>
+        </li>
+      </ul>
+      </div>
+    </nav>
     <div class="bg-container mx-auto w-screen h-screen border-0 p-0 m-0" :style="backgroundStyle">
       <div class="flex-auto text-center text-4xl">
         <a href="">
@@ -33,7 +57,7 @@
       <div>
         <h1 class="pt-10 text-center text-3xl text-white josef2">MORG's Music</h1>
       </div>
-      <div>
+      <div id="spotify">
         <h1 class="pt-10 text-center text-3xl text-white josef2">Listen on Spotify</h1>
         <div class="flex justify-center">
           <iframe
@@ -47,7 +71,7 @@
           ></iframe>
         </div>
       </div>
-      <div>
+      <div id="youtube">
         <h1 class="pt-10 text-center text-3xl text-white josef2">Latest YouTube Videos</h1>
         <YouTubeVideos :videos="videos"/>
       </div>
@@ -56,7 +80,7 @@
         <BandLabEmbed :tracks="tracks" />
       </div> -->
     </div>
-    <footer>
+    <footer id="contact">
       <Footer />
     </footer>
   </div>
