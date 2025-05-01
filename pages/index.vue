@@ -5,11 +5,11 @@
         <div class="inline-block p-2">
           <font-awesome-icon class="h-6 ml-1 mt-1 cursor-pointer text-white" icon="xmark" />
         </div>
-        <a href="https://youtube.com/shorts/nFJkAdgML_A?si=YezYkxf9u_JAnK2X/" target="_blank">
+        <a href="https://sndo.ffm.to/55mdjb6" target="_blank">
           <div class="mt-[-56px] text-center p-[12px] text-2xl">
             <h1 class="text-white">
               <span>Stream</span>
-              <span class="text-blue-300">MORG's "Good Day"</span>
+              <span class="text-blue-300">MORG's "Wait On You"</span>
               <span>now!</span>
             </h1>
           </div>
@@ -34,13 +34,27 @@
         <h1 class="pt-10 text-center text-3xl text-white josef2">MORG's Music</h1>
       </div>
       <div>
-        <h1 class="pt-10 text-center text-3xl text-white josef2">YouTube Videos</h1>
-        <YouTubeVideos :videos="videos"/>
+        <h1 class="pt-10 text-center text-3xl text-white josef2">Listen on Spotify</h1>
+        <div class="flex justify-center">
+          <iframe
+            src="https://open.spotify.com/embed/track/73TDTh7iFO0mdhfLs8lokn?utm_source=generator"
+            width="300"
+            height="380"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+            class="rounded-lg pt-3"
+          ></iframe>
+        </div>
       </div>
       <div>
+        <h1 class="pt-10 text-center text-3xl text-white josef2">Latest YouTube Videos</h1>
+        <YouTubeVideos :videos="videos"/>
+      </div>
+      <!-- <div>
         <h1 class="pt-10 text-center text-3xl text-white josef2">Tracks on BandLab</h1>
         <BandLabEmbed :tracks="tracks" />
-      </div>
+      </div> -->
     </div>
     <footer>
       <Footer />
@@ -74,6 +88,9 @@ export default {
       isModalVisible: false,
       selectedVideoUrl: '',
       videos: [
+        { id: "4At0dI8xJa4" },
+        { id: "Wz9BlivgSbo" },
+        { id: "KG5fkBOLg4c" },
         { id: "-Zm_VqCsCCY" },
         { id: "15xQoUNMWVc" },
         { id: "4Sqw-GwACNI" },

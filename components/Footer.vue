@@ -1,6 +1,9 @@
 <template>
   <footer class="footer">
     <div class="content has-text-centered">
+      <p class="mb-2">
+        Feel free to reach out via email at <a class="hover:text-blue-300 font-black text-xl" href="mailto:halomrgn@gmail.com">halomrgn@gmail.com</a>.<br>
+      </p>
       <div class="social-icons">
         <a href="https://instagram.com/nrfntr" target="_blank">
           <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300"  :icon="['fab', 'instagram']" />
@@ -11,7 +14,7 @@
         <a href="https://youtube.com/@M0R6" target="_blank">
           <font-awesome-icon class="h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'youtube']" />
         </a>
-        <a href="https://open.spotify.com/user/31axkskdizshwu2w55xjsnu5shzy?si=9ceec54e6dc34e41" target="_blank">
+        <a href="https://open.spotify.com/artist/7DPc5JGMWxo7gyHxIvfyHW?si=YMuVGHZiTT67pAK1R2fp0g" target="_blank">
           <font-awesome-icon class=" h-6 mx-auto cursor-pointer text-white hover:text-blue-300" :icon="['fab', 'spotify']" />
         </a>
         <a href="https://soundcloud.com/nrfntr" target="_blank">

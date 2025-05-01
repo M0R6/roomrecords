@@ -1,7 +1,7 @@
 <template>
   <div class="video-grid-container">
     <div class="video-grid">
-      <div class="video" v-for="video in videos" :key="video.id">
+      <div class="video" v-for="video in videos.slice(0, 6)" :key="video.id">
         <iframe :src="getVideoUrl(video.id)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
