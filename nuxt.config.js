@@ -47,6 +47,11 @@ export default {
   modules: [
   ],
 
+  // Server middleware (runtime API endpoints)
+  serverMiddleware: [
+    { path: '/api/youtube', handler: '~/server-middleware/youtube.js' }
+  ],
+
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],

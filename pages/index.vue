@@ -59,7 +59,7 @@
       </div>
       <div id="spotify">
         <h1 class="pt-10 text-center text-3xl text-white josef2">Listen on Spotify</h1>
-        <div class="flex justify-center">
+        <div class="justify-center">
           <iframe
             src="https://open.spotify.com/embed/track/73TDTh7iFO0mdhfLs8lokn?utm_source=generator"
             width="300"
@@ -67,13 +67,23 @@
             frameborder="0"
             allowtransparency="true"
             allow="encrypted-media"
-            class="rounded-lg pt-3"
+            class="mx-auto rounded-lg pt-3"
+          ></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/track/1oPRJL1MG4Ff0LWnsjcBaY?utm_source=generator"
+            width="300"
+            height="380"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+            class="mx-auto rounded-lg pt-3"
           ></iframe>
         </div>
       </div>
       <div id="youtube">
         <h1 class="pt-10 text-center text-3xl text-white josef2">Latest YouTube Videos</h1>
-        <YouTubeVideos :videos="videos"/>
+        <!-- real-time YouTube feed from server middleware -->
+        <YouTubeVideos channel-id="UCUDpK4ExRCW8CqWsd6-UEXg" :max="6" />
       </div>
       <!-- <div>
         <h1 class="pt-10 text-center text-3xl text-white josef2">Tracks on BandLab</h1>
