@@ -77,16 +77,37 @@ export default {
     },
 
     async fetchStaticJson() {
-      // Try to load the generated static JSON created by the GitHub Action
+      // Try several likely locations for the generated static JSON.
+      // - Root: /latest-videos.json (works for user pages at root)
+      // - Repo base: /<repo>/latest-videos.json (GitHub Pages project pages)
+      // - Relative: latest-videos.json (fallback)
+      const tryPaths = ['/latest-videos.json', 'latest-videos.json'];
       try {
-        const res = await fetch('/latest-videos.json', { cache: 'no-cache' });
-        if (!res.ok) return;
-        const json = await res.json();
-        if (Array.isArray(json) && json.length) {
-          this.fetchedVideos = json.map(v => ({ id: v.videoId || v.id, ...v }));
+        // If path looks like /<repo>/..., attempt that repo base as well
+        if (typeof window !== 'undefined') {
+          const parts = window.location.pathname.split('/').filter(Boolean);
+          if (parts.length > 0) {
+            const repoBase = `/${parts[0]}`;
+            // avoid duplicate if site already root
+            if (!tryPaths.includes(`${repoBase}/latest-videos.json`)) tryPaths.splice(1, 0, `${repoBase}/latest-videos.json`);
+          }
+        }
+
+        for (const p of tryPaths) {
+          try {
+            const res = await fetch(p, { cache: 'no-cache' });
+            if (!res.ok) continue;
+            const json = await res.json();
+            if (Array.isArray(json) && json.length) {
+              this.fetchedVideos = json.map(v => ({ id: v.videoId || v.id, ...v }));
+              return;
+            }
+          } catch (_) {
+            // try next path
+          }
         }
       } catch (err) {
-        // ignore errors and allow other fallbacks
+        // ignore any unexpected errors and allow other fallbacks
       }
     }
   },
